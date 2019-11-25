@@ -1,0 +1,458 @@
+/**index.wxss**/
+.remind-img3{
+  width: 300rpx;
+  height:300rpx;
+  padding-bottom: 2rpx;
+}
+.container{
+  padding-bottom: 0;
+  background-color: 	#FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100% auto; 
+  background-position: bottom center;
+  /*background-image: url('/images/index/tri.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  /*background-image: url('https://we.cqu.pt/app/images/index/tri.png');*/
+}
+.more-btn {
+  align-items: center;
+  font-size: 13pt;
+  padding: 0 30rpx;
+}
+/**功能导航**/
+.main-core{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+
+  background: #fff;
+  border-bottom: 1rpx solid #e5e5e5;
+  padding: 15rpx 10rpx 10rpx;
+  min-height: 350rpx;
+  overflow: hidden;
+}
+.main-core-item{
+  background: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 20%;
+  height: 170rpx;
+}
+.main-core-item.disabled{
+  color: #9c9c9c;
+}
+.core-item-icon{
+  display: block;
+  width: 85rpx;
+  height: 85rpx;
+  margin: 15rpx auto;
+}
+.core-item-name{
+  display: block;
+  margin: 5rpx;
+}
+.main-swpier{
+  height:220rpx;
+  position: fixed;
+  padding-bottom: 0;
+  
+  width: 100%;
+  white-space: nowrap;
+}
+.main-swpier .wx-swiper-dots.wx-swiper-dots-horizontal{
+  bottom: 0;
+  margin-bottom: -5rpx;
+  background: #fff;
+}
+/**卡片列表**/
+.main-card {
+  position: fixed;
+  padding-bottom: 300rpx;
+  
+}
+.main-card-item{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-bottom: 20rpx;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+  overflow: hidden;
+}
+.main-card-item#kb{
+  /*background-image: url('/images/index/kb-bg.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  background-image: url('https://we.cqu.pt/app/images/index/kb-bg.png');
+}
+.main-card-item#ykt{
+  /*background-image: url('/images/index/ykt-bg.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  background-image: url('https://we.cqu.pt/app/images/index/ykt-bg.png');
+}
+.main-card-item#jy{
+  /*background-image: url('/images/index/jy-bg.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  background-image: url('https://we.cqu.pt/app/images/index/jy-bg.png');
+}
+.main-card-item#sdf{
+  /*background-image: url('/images/index/sdf-bg.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  background-image: url('https://we.cqu.pt/app/images/index/sdf-bg.png');
+}
+.main-card-item navigator{
+  display: flex;
+  flex-direction: column;
+}
+page .navigator-hover{
+  background-color: rgba(100,100,100,0.1);
+  opacity: 0.8;
+}
+.card-item-hd{
+  display: flex;
+  align-items: center;
+  height: 75rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-left: 30rpx;
+}
+.card-item-icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  
+}
+.card-item-name{
+  letter-spacing: 2px;
+}
+.card-item-more{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 25rpx;
+}
+.card-item-open{
+  width: 30rpx;
+  height: 30rpx;
+}
+.card-item-bd{
+  padding: 20rpx 25rpx 30rpx 0;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.card-info-hd{
+  display: flex;
+  justify-content: space-between;
+}
+.card-info-left{
+  display: flex;
+  flex-direction: column;
+}
+.card-info-right{
+  display: flex;
+  color: #acacac;
+  flex-direction: column;
+}
+.card-info-name{
+  font-size: 16pt;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #acacac;
+}
+.card-info-number{
+  line-height: 175%;
+  text-indent: 1px;
+  color: #aaa;
+}
+.main-ending{
+  display: none;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 75rpx;
+  overflow: hidden;
+}
+.main-ending-text{
+  width: 72pt;
+  color: #ccc;
+  font-size: 8pt;
+  padding: 0 16rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+.main-ending-line{
+  width: 100%;
+  height: 0;
+  border-top: 1rpx solid #e5e5e5;
+}
+/**一卡通**/
+.ykt-balance{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  padding: 25rpx 0 30rpx;
+}
+.ykt-balance-text{
+  font-size: 17pt;
+  line-height: 2;
+  color: #999;
+}
+.ykt-balance-value{
+  font-size: 58pt;
+  line-height: 1;
+  padding: 0 20rpx;
+  color: #ffbf92;
+}
+.ykt-cost{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20rpx 0 30rpx;
+  font-weight: bold;
+  line-height: 200%;
+}
+.ykt-cost-text{
+  font-size: 10pt;
+  color: #999;
+}
+.ykt-cost-value{
+  font-size: 12pt;
+  font-weight: normal;
+  color: #777;
+  padding: 0 10rpx;
+}
+.ykt-cost-total{
+  font-size: 16pt;
+  color: #ffbf92;
+  padding: 0 10rpx;
+}
+.ykt-title{
+  font-size: 10pt;
+}
+.ykt-no-cost{
+  color: #bbb;
+}
+/**借阅信息**/
+.main-card-item#jy .card-item-bd{
+  padding-bottom: 85rpx;
+}
+.jy-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.jy-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx 15rpx 15rpx;
+}
+.jy-book{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 176rpx;
+  height: 231rpx;
+  /*background-image: url('/images/index/jy-book.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  background-image: url('https://we.cqu.pt/app/images/index/jy-book.png');
+  background-size: 100% 100%;
+  padding: 5rpx 5rpx 50rpx 30rpx;
+  color: #fff;
+  margin-bottom: 10rpx;
+}
+.jy-pickup-time{
+  text-align: right;
+  font-size: 8pt;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+.jy-pickup-time-text{
+  padding-left: 4rpx;
+}
+.jy-book-name{
+  height: 126rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 150%;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.jy-timing, jy-return-time{
+  line-height: 200%;
+}
+.jy-timing-value{
+  font-size: 13pt;
+  font-weight: bold;
+  color: #729fc3;
+  padding: 0 8rpx;
+}
+.jy-timing-text{
+  font-size: 10pt;
+  color: #acacac;
+}
+.jy-return-time-value{
+  font-size: 12pt;
+  color: #7f848a;
+}
+.jy-return-time-text{
+  font-size: 10pt;
+  color: #acacac;
+  padding-left: 8rpx;
+}
+/**水电费**/
+.main-card-item#sdf .card-item-bd{
+  padding-bottom: 80rpx;
+}
+.sdf-hd{
+  color: #acacac;
+  margin: 40rpx 0 20rpx;
+}
+.sdf-bd{
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+}
+.sdf-key{
+  padding: 0 10rpx;
+}
+.sdf-value{
+  color: #ffbf92;
+  font-size: 46pt;
+  font-weight: bold;
+  padding: 0 15rpx;
+}
+.sdf-text{
+  color: #acacac;
+  font-size: 13pt;
+}
+
+/**news.wxss**/
+
+.container-new{
+  background-color: #fff;
+  padding-bottom: 0;
+  padding: 260rpx;
+  position: fixed;
+}
+.filter{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 160rpx;
+  white-space: nowrap;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), color-stop(0.93, rgba(255,255,255,.93)), to(rgba(255,255,255,0)));
+}
+.filter-item{
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx;
+  margin-left: 0;
+  border-radius: 5rpx;
+  box-shadow: 1px 2px 3px #e5e5e5;
+  opacity: .66;
+}
+.filter-item#all{
+  margin-left: 20rpx;
+}
+.filter-item.active{
+  opacity: 1;
+  transform: scale(1.08,1.08);
+  box-shadow: 1px 2px 3px #ddd;
+}
+.loader{
+  display: inline-block;
+  width: 100%;
+  height: 160rpx;  
+  line-height: 160rpx;
+  margin-top: -160rpx;
+  letter-spacing: 10rpx;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 40rpx;
+}
+.loader image{
+  height: 200rpx;
+  width: 300rpx;
+}
+.content{
+  flex-direction: column;
+  padding: 260rpx 20rpx 0;
+}
+.content-ending{
+  width: 100%;
+  color: #bbb;
+  text-align: center;
+  margin: 30rpx auto;
+}
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120rpx;
+  margin-bottom: 20rpx;
+  border-radius: 3px;
+  box-shadow: 1px 2px 3px #ddd;
+  padding: 0 30rpx;
+  color: #fff;
+}
+.list-item.jw{
+  background-color: #9f8bea;
+}
+.list-item.oa{
+  background-color: #73b4ef;
+}
+.list-item.hy{
+  background-color: #ffcb63;
+}
+.list-item.jz{
+  background-color: #e78ab0;
+}
+.list-item.new{
+  background-color: #87CEEB;
+}
+.list-item-left{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-right: 10rpx;
+}
+.list-item-title{
+  font-size: 10pt;
+  line-height: 175%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+.list-item-dep{
+  font-size: 10pt;
+  line-height: 125%;
+}
+.list-item-time{
+  font-size: 10pt;
+  line-height: 125%;
+  opacity: 0.6;
+}
+.list-item-icon{
+  flex: 0 0 60rpx;
+  height: 60rpx;
+  width: 60rpx;
+  border-left: 1px solid #fff;
+  padding-left: 25rpx;
+}
