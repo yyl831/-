@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="fix_tip {{offline?'active':''}}">
+        <text>离线缓存模式</text>
+    </view>
+
+  <!--功能导航-->
+  <swiper class="main-swpier" indicator-dots="true" indicator-active-color="#73b4ef">
+  <swiper-item class="main-core" wx:for="{{cores}}"  wx:for-item="core" wx:key="id" >
+    <block wx:for="{{core}}" wx:key="id">
+      <navigator wx:if="{{true}}" class="main-core-item" url="{{'/pages/core/'+item.id+'/'+item.id}}">
+        <image class="core-item-icon" src="/images/core/{{item.id}}.png"></image>
+        <text class="core-item-name">{{item.name}}</text>
+      </navigator>
+      <view wx:else class="main-core-item disabled" bindtap="disabled_item">
+        <image class="core-item-icon" src="/images/core/{{item.id}}@disabled.png"></image>
+        <text class="core-item-name">{{item.name}}</text>
+      </view>
+    </block>
+  </swiper-item >
+  </swiper>
+    <view class="fix_tip {{disabledItemTap?'active':''}}"></view>
+  <view wx:if="{{remind}}" class="remind-box">
+    <image wx:if="{{remind == '加载中'}}" class="remind-img3" src="/images/index/loading.gif"></image>
+    <block wx:else>
+      <image class="remind-img" src="/images/index/nothing.png"></image>
+      <text class="remind-text">{{remind}}</text>
+      <navigator wx:if="{{remind == '未绑定'}}" url="/pages/more/login" class="remind-btn">前往绑定</navigator>
+    </block>
+    
+  </view>
+  <!--卡片列表-->
+
+
+  <!--在这里写一个通知公告栏，把下面的卡片挤下去，或者先删掉。-->
+
+  <view class="content">
+    <view class="loader">
+      <image src="/images/index/loading1.gif" wx-if="{{loading}}"></image>
+    </view>
+    <block wx:for="{{active.data}}" wx:key="item.articleid">
+      <navigator url="/pages/news/{{item.type}}/{{item.type}}_detail?type={{item.type}}&id=5&href={{item.href}}&title={{item.title}}&time={{item.time}}&author={{item.dep}}">
+        <view class="list-item {{item.type}}">
+          <view class="list-item-left">
+            <text class="list-item-title">{{item.title}}</text>
+            <text class="list-item-time">{{item.time}}    {{item.dep}}</text>
+          </view>
+          <image class="list-item-icon" src="/images/news/{{item.type}}.png"></image>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <!--提醒消息-->
+  <text class="content-ending">{{active.remind}}</text>
+
+
+  <view class="main-ending">
+    <view class="main-ending-line"></view>
+    <view class="main-ending-text">我是一个乖巧的结尾</view>
+    <view class="main-ending-line"></view>
+  </view>
+
+</view>
